@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="./script.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="~/assets/images/logo-white.png" alt="">
+        <nav>
+            <img src="./assets/images/logo.svg" alt="" class="logo">
+            <div class="hamburger" id="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+
+                <ul>
+                    <li>Over mij</li>
+                    <li>Werk</li>
+                    <li>Curriculum Vitae</li>
+                    <li>Let's have a talk</li>
+                    <li>Send a mail</li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <header>
+            <h1>Frontend developer with a passion for creating beautiful and user-friendly web experiences.</h1>
+            <p> With a strong foundation in HTML, CSS, and JavaScript, I love turning design concepts into interactive and responsive websites that engage users.</p>
+            <div class="button-wrapper">
+                <button>Werk</button>
+                <button>Contact</button>
+            </div>
+        </header>
+    </main>
     <footer></footer>
 </body>
+
 </html>
