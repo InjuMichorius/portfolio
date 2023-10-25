@@ -1,6 +1,8 @@
 :root {
     --white: #EBDBCB;
     --black: #21211F;
+    --purple: #B47BE2;
+    --yellow: #ECBA41;
     --darkBlack: #111110;
 }
 
@@ -109,4 +111,33 @@ li {
 
 li:hover {
     background-color: var(--black);
+}
+
+h1 {
+    margin: 140px 0 30px;
+    color: var(--white);
+}
+
+.button-wrapper {
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+button.primary {
+    background-color: var(--purple);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--darkBlack);
+}
+
+button.secondary {
+    background-color: transparent;
+    padding: 14px 30px;
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--white);
 }
