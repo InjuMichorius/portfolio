@@ -127,7 +127,7 @@ h1 {
     margin: 140px auto 30px;
 }
 
-.description {
+header .description {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     max-width: 900px;
@@ -152,16 +152,38 @@ button.primary {
     font-weight: 700;
     color: var(--darkBlack);
     cursor: pointer;
+    font-size: 24px;
 }
 
 button.secondary {
     background-color: transparent;
-    padding: 14px 30px;
+    padding: 16px 30px;
     border: 2px solid var(--white);
     border-radius: 10px;
     font-weight: 700;
     color: var(--white);
     cursor: pointer;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+    button.primary {
+        font-size: 16px;
+    }
+    
+    button.secondary {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    button.primary {
+        padding: 8px 16px;
+    }
+    
+    button.secondary {
+        padding: 8px 16px;
+    }
 }
 
 .image-slider-container {
@@ -222,32 +244,4 @@ button.secondary {
     width: 10px;
     background-color: var(--yellow);
     border-radius: 100%;
-}
-
-.about-container {
-    padding: 90px 0;
-    display: flex;
-    gap: 90px;
-    justify-content: center;
-}
-
-.about-container .content-block {
-    width: 600px;
-    color: var(--white);
-}
-
-.about-container .content-block .label {
-    font-family: 'Barlow', sans-serif;
-    font-size: 24px:
-}
-
-.about-container .content-block h2 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 70px:
-}
-
-.about-container .button-wrapper {
-    display: flex;
-    gap: 20px;
-    margin-top: 60px;
 }
