@@ -122,7 +122,7 @@ h1 {
     margin: 140px 0 30px;
     color: var(--white);
     font-family: 'Barlow', sans-serif;
-    width: 830px;
+    max-width: 830px;
     text-align: center;
     margin: 140px auto 30px;
 }
@@ -134,6 +134,7 @@ h1 {
     text-align: center;
     color: var(--white);
     margin: auto;
+    opacity: 50%;
 }
 
 header .button-wrapper {
@@ -223,37 +224,10 @@ button.secondary {
     border-radius: 100%;
 }
 
-.skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
-    background-color: var(--darkBlack);
-    padding-bottom: 90px;
-    margin: 90px 0;
-    text-align: center;
-}
-
-.skills-wrapper {
-    width: 400px;
-}
-
-.skills-wrapper img {
-    width: 200px;
-}
-
-.skills-wrapper h3 {
-    font-family: 'Barlow', sans-serif;
-    margin-bottom: 10px;
-}
-
-.skills-wrapper p {
-    font-family: 'Inter', sans-serif;
-}
-
 .about-container {
     padding: 90px 0;
     display: flex;
+    gap: 90px;
     justify-content: center;
 }
 
