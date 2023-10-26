@@ -117,32 +117,6 @@ nav {
   background-color: var(--black);
 }
 
-h1 {
-  margin: 140px 0 30px;
-  color: var(--white);
-  font-family: "Barlow", sans-serif;
-  max-width: 830px;
-  text-align: center;
-  margin: 140px auto 30px;
-}
-
-header .description {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  max-width: 900px;
-  text-align: center;
-  color: var(--white);
-  margin: auto;
-  opacity: 50%;
-}
-
-header .button-wrapper {
-  margin-top: 60px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
 button.primary {
   background-color: var(--purple);
   padding: 16px 32px;

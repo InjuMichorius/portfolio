@@ -54,6 +54,7 @@ footer {
 .footer-bottom .socials {
   display: flex;
   gap: 10px;
+  justify-content: flex-end;
 }
 
 .footer-bottom .socials img {
@@ -113,6 +114,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   footer {
+    margin-top: 60px;
     padding: 0 15px 15px;
   }
 
@@ -123,7 +125,7 @@ footer {
 
   .footer-menu-items {
     margin-top: 60px;
-    gap: 60px;
+    gap: 40px;
     font-size: 20px;
   }
 
