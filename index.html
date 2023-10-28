@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="./styles/header-section.css">
+    <link rel="stylesheet" href="./styles/landing-section.css">
+    <link rel="stylesheet" href="./styles/marquee-section.css">
     <link rel="stylesheet" href="./styles/skills-section.css">
     <link rel="stylesheet" href="./styles/about-section.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -27,7 +28,7 @@
 
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <img src="./assets/images/logo.svg" alt="" class="logo">
             <div class="hamburger" id="hamburger">
                 <span class="line"></span>
@@ -46,10 +47,11 @@
     </header>
     <main>
         <header class="landing-section">
-            <h1>Creating beautiful and <br> user-friendly web experiences.</h1>
-            <p class="description"> With a strong foundation in HTML, CSS, and JavaScript, I love turning design
+            <h1 class="first-h1"><span>Limitless</span> <span>Frontend</span> <span>Creativity</span></h1> <br>
+            <h1 class="second-h1"><span>My</span> <span>Portfolio</span> <span>Showcase</span></h1>
+            <p class="description hidden"> With a strong foundation in HTML, CSS, and JavaScript, I love turning design
                 concepts into interactive and responsive websites that engage users.</p>
-            <div class="button-wrapper">
+            <div class="button-wrapper hidden">
                 <button class="secondary">Werk</button>
                 <button class="primary">Contact</button>
             </div>
@@ -57,44 +59,48 @@
         <div class="image-slider-container">
             <div class="image-container">
                 <img src="./assets/images/project-1.jpg" alt="">
-                <h3>Yallaswap</h3>
-                <p>A NFT marketplace focusing on a target group living in the Middle East</p>
+                <h3>Iris Klabbers</h3>
+                <p>Portfolio website design and development for Iris Klabbers, an artist from Arnhem</p>
             </div>
             <div class="image-container">
-                <img src="./assets/images/project-1.jpg" alt="">
-                <h3>Yallaswap</h3>
-                <p>A NFT marketplace focusing on a target group living in the Middle East</p>
+                <img src="./assets/images/project-2.jpg" alt="">
+                <h3>cobol.nl</h3>
+                <p>Website design and development for a company that works with COBOL</p>
             </div>
             <div class="image-container">
-                <img src="./assets/images/project-1.jpg" alt="">
+                <img src="./assets/images/project-3.jpg" alt="">
                 <h3>Yallaswap</h3>
                 <p>A NFT marketplace focusing on a target group living in the Middle East</p>
             </div>
         </div>
-        <div class="infinite-marquee">
-            <span>Vue.js</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Webflow</span>
-            <span>Wordpress</span>
-            <span>Figma</span>
+        <div class="scroller hidden" data-speed="slow" data-direction="right">
+            <ul class="tag-list scroller__inner">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Vue.js</li>
+                <li>React</li>
+                <li>Webflow</li>
+                <li>Wordpress</li>
+                <li>Figma</li>
+                <li>Slack</li>
+                <li>Git</li>
+            </ul>
         </div>
         <section class="skills-section">
             <div class="skills-container">
                 <div class="skills-wrapper hidden">
                     <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
 
-                    <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="hover" colors="primary:#ebdbcb"
+                    <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="hover" colors="primary:#fff"
                         style="width:100px;height:100px">
                     </lord-icon>
                     <h3>Problem solving skills</h3>
                     <p>Staying updated of latest trends</p>
                 </div>
                 <div class="skills-wrapper hidden">
-                    <lord-icon src="https://cdn.lordicon.com/nizfqlnk.json" trigger="hover" colors="primary:#ebdbcb"
-                        style="width:100px;
+                    <lord-icon src="https://cdn.lordicon.com/nizfqlnk.json" trigger="hover" colors="primary:#fff" style="width:100px;
                         height:100px">
 
                     </lord-icon>
@@ -105,7 +111,7 @@
                 <div class="skills-wrapper hidden">
                     <div class="skill-icon">
                         <lord-icon src="https://cdn.lordicon.com/baxknfaw.json" trigger="hover" style="width:100px;
-                                                height:100px" colors="primary:#ebdbcb">
+                                                height:100px" colors="primary:#fff">
                         </lord-icon>
                     </div>
                     <h3>Eye for design</h3>

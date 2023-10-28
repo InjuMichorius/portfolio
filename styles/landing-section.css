@@ -6,11 +6,42 @@
 h1 {
   color: var(--white);
   font-family: "Abril Fatface", serif;
-  font-famly: "montserrat";
-  font-size: 70px;
-  text-align: center;
   margin: 0 auto;
   letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  font-size: 70px;
+  overflow: hidden;
+  line-height: 1;
+}
+h1 span {
+  display: inline-block;
+  opacity: 0;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.first-h1 span:nth-child(1) {
+  animation-delay: 200ms;
+}
+
+.first-h1 span:nth-child(2) {
+  animation-delay: 400ms;
+}
+
+.first-h1 span:nth-child(3) {
+  animation-delay: 600ms;
+}
+
+.second-h1 span:nth-child(1) {
+  animation-delay: 800ms;
+}
+
+.second-h1 span:nth-child(2) {
+  animation-delay: 1000ms;
+}
+
+.second-h1 span:nth-child(3) {
+  animation-delay: 1200ms;
 }
 
 .landing-section .description {
@@ -20,6 +51,7 @@ h1 {
   text-align: center;
   color: var(--lightWhite);
   margin: 30px auto;
+  transition-delay: 2100ms;
 }
 
 .landing-section .button-wrapper {
@@ -27,6 +59,7 @@ h1 {
   display: flex;
   gap: 20px;
   justify-content: center;
+  transition-delay: 2400ms;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -76,5 +109,16 @@ h1 {
     display: flex;
     gap: 20px;
     justify-content: center;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
   }
 }
