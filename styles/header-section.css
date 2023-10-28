@@ -13,9 +13,8 @@ header .description {
   font-size: 24px;
   max-width: 900px;
   text-align: center;
-  color: var(--white);
+  color: var(--lightWhite);
   margin: auto;
-  opacity: 50%;
 }
 
 header .button-wrapper {
@@ -39,9 +38,7 @@ header .button-wrapper {
     font-size: 24px;
     max-width: 900px;
     text-align: center;
-    color: var(--white);
     margin: auto;
-    opacity: 50%;
   }
 
   header .button-wrapper {
@@ -66,9 +63,7 @@ header .button-wrapper {
     font-size: 18px;
     max-width: 470px;
     text-align: center;
-    color: var(--white);
     margin: auto;
-    opacity: 50%;
   }
 
   header .button-wrapper {
