@@ -1,23 +1,28 @@
-h1 {
-  margin: 140px 0 30px;
-  color: var(--white);
-  font-family: "Barlow", sans-serif;
-  font-size: 40px;
-  max-width: 900px;
-  text-align: center;
-  margin: 140px auto 30px;
+.landing-section {
+  position: relative;
+  padding: 140px 90px;
 }
 
-header .description {
+h1 {
+  color: var(--white);
+  font-family: "Abril Fatface", serif;
+  font-famly: "montserrat";
+  font-size: 70px;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+.landing-section .description {
   font-family: "Inter", sans-serif;
   font-size: 24px;
   max-width: 900px;
   text-align: center;
   color: var(--lightWhite);
-  margin: auto;
+  margin: 30px auto;
 }
 
-header .button-wrapper {
+.landing-section .button-wrapper {
   margin-top: 60px;
   display: flex;
   gap: 20px;
@@ -33,7 +38,7 @@ header .button-wrapper {
     font-size: 30px;
   }
 
-  header .description {
+  .landing-section .description {
     font-family: "Inter", sans-serif;
     font-size: 24px;
     max-width: 900px;
@@ -41,7 +46,7 @@ header .button-wrapper {
     margin: auto;
   }
 
-  header .button-wrapper {
+  .landing-section .button-wrapper {
     margin-top: 60px;
     display: flex;
     gap: 20px;
@@ -58,7 +63,7 @@ header .button-wrapper {
     font-size: 24px;
   }
 
-  header .description {
+  .landing-section .description {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     max-width: 470px;
@@ -66,7 +71,7 @@ header .button-wrapper {
     margin: auto;
   }
 
-  header .button-wrapper {
+  .landing-section .button-wrapper {
     margin-top: 60px;
     display: flex;
     gap: 20px;
