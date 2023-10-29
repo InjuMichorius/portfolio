@@ -11,8 +11,7 @@
   position: relative;
   color: var(--white);
   height: 260px;
-  width: 100%;
-  max-width: 470px;
+  width: 470px;
   background-color: var(--darkBlack);
   border-radius: 10px;
   transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
@@ -20,7 +19,7 @@
 
 .image-container:hover {
   padding: 20px;
-  height: 318px;
+  height: 338px;
 }
 
 .image-container img {
@@ -33,26 +32,24 @@
 }
 
 .project-details {
+  position: absolute;
+  bottom: -60px;
   display: flex;
+  width: calc(100% - 40px);
   align-items: flex-end;
   justify-content: space-between;
+  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .image-container h3 {
-  font-family: "Barlow", sans-serif;
-  font-size: 24px;
-  margin: -80px 20px 10px;
-  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-.image-container:hover h3 {
-  margin: 20px 0 10px;
-}
-
-.image-container p {
-  font-family: "Inter", sans-serif;
-  margin-left: 20px;
-  transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+.image-container span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 
 .image-container:hover p {

@@ -1,6 +1,6 @@
 :root {
   --heading: "Abril Fatface", serif;
-  --heading: "Montserrat", serif;
+  --heading: "Montserrat", sans-serif;
   --text: "Inter", sans-serif;
   --white: #fff;
   --lightWhite: #c3b6a8;
@@ -8,6 +8,7 @@
   --purple: #b47be2;
   --yellow: #ecba41;
   --darkBlack: rgba(17, 17, 16, 0.8);
+  --darkWhite: rgba(255, 255, 255, 0.4);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Inter&display=swap");
@@ -186,6 +187,7 @@ button.primary {
   color: var(--darkBlack);
   cursor: pointer;
   font-size: 24px;
+  border-radius: 10px;
 }
 
 button.secondary {

@@ -1,6 +1,7 @@
 .scroller {
   max-width: 1180px;
   margin: 90px auto;
+  transition-delay: 2400ms;
 }
 
 .scroller__inner {
@@ -78,9 +79,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.tag-list li:nth-child(even):hover {
-  color: var(--darkBlack);
-  background-color: var(--purple);
+.tag-list li:hover {
+  transform: translateY(-5px);
 }
 
 /* for testing purposed to ensure the animation lined up correctly */
