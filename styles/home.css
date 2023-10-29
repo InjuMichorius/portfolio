@@ -281,8 +281,7 @@ button.hover-filled-slide-up:hover::before {
 
 /* grainy background */
 
-main:before,
-footer:before {
+main:before {
   content: "";
   position: absolute;
   top: 0;
@@ -294,8 +293,7 @@ footer:before {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111110', endColorstr='#21211F', GradientType=1);
 }
 
-main:after,
-footer:after {
+main:after {
   opacity: 0.4;
   content: "";
   position: absolute;

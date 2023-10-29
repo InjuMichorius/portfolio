@@ -4,6 +4,10 @@
   transition-delay: 2400ms;
 }
 
+.marquee {
+  transition-delay: 900ms;
+}
+
 .scroller__inner {
   padding-block: 1rem;
   display: flex;
