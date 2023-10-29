@@ -7,9 +7,11 @@
 }
 
 .image-container {
+  cursor: pointer;
   position: relative;
   color: var(--white);
   height: 260px;
+  width: 100%;
   max-width: 470px;
   background-color: var(--darkBlack);
   border-radius: 10px;
@@ -18,7 +20,7 @@
 
 .image-container:hover {
   padding: 20px;
-  height: 402px;
+  height: 318px;
 }
 
 .image-container img {
@@ -28,6 +30,12 @@
   object-fit: cover;
   position: relative;
   z-index: 10;
+}
+
+.project-details {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .image-container h3 {
