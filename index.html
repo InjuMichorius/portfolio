@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Inju Michorius - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/landing-section.css">
+    <link rel="stylesheet" href="./styles/image-section.css">
     <link rel="stylesheet" href="./styles/marquee-section.css">
     <link rel="stylesheet" href="./styles/skills-section.css">
     <link rel="stylesheet" href="./styles/about-section.css">
+    <link rel="stylesheet" href="./styles/work-section.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,14 +32,16 @@
 <body>
     <header>
         <nav id="navbar">
-            <img src="./assets/images/logo.svg" alt="" class="logo">
+            <a href="#"><img src="./assets/images/logo.svg" alt="" class="logo"></a>
             <div class="hamburger" id="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
 
                 <ul class="menu-items">
-                    <li>Over mij</li>
+                    <a href="#about-me">
+                        <li>Over mij</li>
+                    </a>
                     <li>Werk</li>
                     <li>Curriculum Vitae</li>
                     <li class="secondary">Let's have a talk</li>
@@ -46,14 +51,16 @@
         </nav>
     </header>
     <main>
-        <header class="landing-section">
-            <h1 class="first-h1"><span>Limitless</span> <span>Frontend</span> <span>Creativity</span></h1> <br>
-            <h1 class="second-h1"><span>My</span> <span>Portfolio</span> <span>Showcase</span></h1>
-            <p class="description hidden"> With a strong foundation in HTML, CSS, and JavaScript, I love turning design
+        <header id="parallax" class="landing-section">
+            <h1 class="first-h1"><span>Using</span> <span>creativity</span> <span>and</span> <span>Frontend</span></h1>
+            <br>
+            <h1 class="second-h1"><span>my</span> <span>portfolio</span> <span>showcase</span></h1>
+            <p class="description slide-up"> With a strong foundation in HTML, CSS, and JavaScript, I love turning
+                design
                 concepts into interactive and responsive websites that engage users.</p>
-            <div class="button-wrapper hidden">
-                <button class="secondary">Werk</button>
-                <button class="primary">Contact</button>
+            <div class="button-wrapper slide-up">
+                <button class="btn btn-2 hover-slide-up secondary"><span>Werk</span></button>
+                <button class="btn btn-2 hover-slide-up primary"><span>Contact</span></button>
             </div>
         </header>
         <div class="image-slider-container">
@@ -73,7 +80,7 @@
                 <p>A NFT marketplace focusing on a target group living in the Middle East</p>
             </div>
         </div>
-        <div class="scroller hidden" data-speed="slow" data-direction="right">
+        <div class="scroller slide-up" data-speed="slow" data-direction="right">
             <ul class="tag-list scroller__inner">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -90,7 +97,7 @@
         </div>
         <section class="skills-section">
             <div class="skills-container">
-                <div class="skills-wrapper hidden">
+                <div class="skills-wrapper slide-up">
                     <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
 
                     <lord-icon src="https://cdn.lordicon.com/lzgmgrnn.json" trigger="hover" colors="primary:#fff"
@@ -99,7 +106,7 @@
                     <h3>Problem solving skills</h3>
                     <p>Staying updated of latest trends</p>
                 </div>
-                <div class="skills-wrapper hidden">
+                <div class="skills-wrapper slide-up">
                     <lord-icon src="https://cdn.lordicon.com/nizfqlnk.json" trigger="hover" colors="primary:#fff" style="width:100px;
                         height:100px">
 
@@ -108,7 +115,7 @@
                     <p>Willing to stay updated of latest trends</p>
                 </div>
 
-                <div class="skills-wrapper hidden">
+                <div class="skills-wrapper slide-up">
                     <div class="skill-icon">
                         <lord-icon src="https://cdn.lordicon.com/baxknfaw.json" trigger="hover" style="width:100px;
                                                 height:100px" colors="primary:#fff">
@@ -120,7 +127,7 @@
 
             </div>
         </section>
-        <section class="about-section">
+        <section id="about-me" class="about-section">
             <div class="about-container">
                 <div class="content-block">
                     <p class="label">Hello, I'm Inju Michorius</p>
@@ -135,6 +142,33 @@
                     </div>
                 </div>
                 <img src="./assets/images/about-photo.png" alt="">
+            </div>
+        </section>
+        <section class="work-section">
+            <h2>
+                Werk
+            </h2>
+            <div class="work-container">
+                <div class="image-container">
+                    <img src="./assets/images/project-1.jpg" alt="">
+                    <h3>Iris Klabbers</h3>
+                    <p>Portfolio website design and development for Iris Klabbers, an artist from Arnhem</p>
+                </div>
+                <div class="image-container">
+                    <img src="./assets/images/project-2.jpg" alt="">
+                    <h3>Iris Klabbers</h3>
+                    <p>Portfolio website design and development for Iris Klabbers, an artist from Arnhem</p>
+                </div>
+                <div class="image-container">
+                    <img src="./assets/images/project-3.jpg" alt="">
+                    <h3>Iris Klabbers</h3>
+                    <p>Portfolio website design and development for Iris Klabbers, an artist from Arnhem</p>
+                </div>
+                <div class="image-container">
+                    <img src="./assets/images/project-1.jpg" alt="">
+                    <h3>Iris Klabbers</h3>
+                    <p>Portfolio website design and development for Iris Klabbers, an artist from Arnhem</p>
+                </div>
             </div>
         </section>
     </main>
@@ -156,21 +190,21 @@
                     <ul>
                         <h3>Contact</h3>
                         <li>Mail</li>
-                        <li>Make appointment</li>
+                        <li>Maak afspraak</li>
                         <li>Curriculum Vitae</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="company-details">
-                    <p>KvK: 000000000000</p>
-                    <p>BTW: 0000000000</p>
+                    <p>KvK: 87173182</p>
+                    <p>BTW: NL004368286B84</p>
                 </div>
                 <div class="socials">
-                    <img src="./assets/icons/github.png" alt="">
-                    <img src="./assets/icons/linkedin.png" alt="">
-                    <img src="./assets/icons/instagram.png" alt="">
-                    <img src="./assets/icons/envelope.png" alt="">
+                    <img src="./assets/icons/github.svg" alt="">
+                    <img src="./assets/icons/linkedin.svg" alt="">
+                    <img src="./assets/icons/instagram.svg" alt="">
+                    <img src="./assets/icons/envelope.svg" alt="">
                 </div>
             </div>
         </div>

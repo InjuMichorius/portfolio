@@ -7,15 +7,12 @@ $(document).ready(function () {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+      entry.target.classList.add("slide-up-finish");
     }
-    // else {
-    //   entry.target.classList.remove(".show");
-    // }
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElements = document.querySelectorAll(".slide-up");
 hiddenElements.forEach((el) => observer.observe(el));
 
 const scrollers = document.querySelectorAll(".scroller");

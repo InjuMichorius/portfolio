@@ -2,6 +2,7 @@
   padding: 90px 30px;
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
 }
 
 .about-container img {
