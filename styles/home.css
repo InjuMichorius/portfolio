@@ -24,9 +24,12 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 main {
   position: relative;
-  scroll-behavior: smooth;
   padding-bottom: 90px;
 }
 
@@ -129,21 +132,10 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-.menu-items li {
-  padding: 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-.menu-items li:last-child {
-  background-color: var(--purple);
-  text-align: center;
-  color: var(--darkBlack);
-}
-
-.menu-items li:last-child:hover {
-  background-color: var(--purple);
-  color: var(--darkBlack);
+.menu-items a,
+.menu-items a:visited {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .menu-items li:hover {
