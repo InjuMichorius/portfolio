@@ -31,9 +31,20 @@ footer {
   font-size: 20px;
 }
 
+.footer-container ul a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .footer-container ul li {
   font-size: 18px;
   opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-container ul li:hover {
+  opacity: 1;
 }
 
 .footer-top {
@@ -69,6 +80,12 @@ footer {
 
 .footer-bottom .socials svg {
   cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-bottom .socials svg:hover {
+  opacity: 1;
 }
 
 .logo {
@@ -165,18 +182,14 @@ footer {
     border-top: 1px solid var(--white);
     padding-top: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
 
   .footer-bottom .socials {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    width: 100px;
-  }
-
-  .footer-bottom .socials img {
-    cursor: pointer;
+    margin-bottom: 30px;
   }
 }

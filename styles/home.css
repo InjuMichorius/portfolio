@@ -142,6 +142,13 @@ nav {
   background-color: var(--black);
 }
 
+.menu-items .primary,
+.menu-items .primary:hover {
+  text-align: center;
+  background-color: var(--purple);
+  transition: all 0.3s ease-in-out;
+}
+
 .menu-items .secondary {
   text-align: center;
   margin-top: 30px;
