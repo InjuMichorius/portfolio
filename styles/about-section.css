@@ -35,7 +35,8 @@
 
 .about-container .description {
   font-family: "Inter", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
+  color: var(--darkWhite);
 }
 
 .about-container .button-wrapper {
