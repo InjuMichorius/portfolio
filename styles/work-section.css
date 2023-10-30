@@ -13,6 +13,7 @@
   font-family: var(--heading);
   font-size: 70px;
   margin-bottom: 60px;
+  max-width: 1180px;
 }
 
 .work-container {
@@ -84,6 +85,91 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .work-section {
+    background-color: rgba(17, 17, 16, 0.8);
+    padding: 90px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .work-section h2 {
+    color: var(--white);
+    text-align: center;
+    font-family: var(--heading);
+    font-size: 70px;
+    margin-bottom: 60px;
+    max-width: 1180px;
+  }
+
+  .work-container {
+    display: grid;
+    grid-gap: 90px;
+    grid-template-columns: 1fr;
+  }
+
+  .work-container .image-container {
+    background-color: var(--black);
+  }
+
+  .work-container .project-description {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-family: var(--text);
+    color: var(--darkWhite);
+  }
+
+  .work-container .image-container {
+    cursor: pointer;
+    position: relative;
+    color: var(--white);
+    height: 260px;
+    width: 100%;
+    background-color: var(--darkBlack);
+    border-radius: 10px;
+    transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .work-container .image-container:hover {
+    padding: 20px;
+    height: 338px;
+  }
+
+  .work-container .image-container img {
+    border-radius: 10px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+  }
+
+  .work-container .project-details {
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    width: calc(100% - 40px);
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+
+  .work-container .image-container h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .work-container .image-container span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+  }
+
+  .work-container .image-container:hover p {
+    margin-left: 0;
+  }
   .work-container .image-container img {
     border-radius: 10px;
     width: 100%;
