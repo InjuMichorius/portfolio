@@ -2,7 +2,6 @@
   padding: 90px 30px;
   display: flex;
   justify-content: center;
-  scroll-behavior: smooth;
 }
 
 .about-container img {
@@ -13,6 +12,7 @@
   width: 100%;
   max-width: 1140px;
   display: flex;
+  gap: 60px;
   justify-content: space-between;
   align-items: center;
 }
@@ -36,6 +36,7 @@
 .about-container .description {
   font-family: "Inter", sans-serif;
   font-size: 18px;
+  line-height: 24px;
   color: var(--darkWhite);
 }
 
@@ -45,26 +46,46 @@
   margin-top: 60px;
 }
 
+.about-container .icon {
+  width: 40px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container .icon:hover {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 1200px) {
-  .about-container {
-    gap: 30px;
-    width: 100%;
-    max-width: 700px;
-  }
   .about-container img {
-    width: 250px;
+    max-width: 300px;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-container img {
+    max-width: 300px;
+  }
+
+  .about-container .content-block {
+    max-width: 600px;
+    color: var(--white);
+  }
+
   .about-container .content-block .label {
     font-size: 16px;
   }
 
   .about-container .content-block h2 {
-    font-size: 30px;
-    margin: 5px 0;
+    font-size: 24px;
   }
 
   .about-container .description {
     font-size: 16px;
+  }
+
+  .about-container .icon {
+    width: 30px;
   }
 }
 
@@ -74,23 +95,22 @@
     align-items: flex-start;
     gap: 30px;
     width: 100%;
-    max-width: 445px;
   }
   .about-container img {
     width: 100%;
+    max-width: 100%;
   }
   .about-container .content-block .label {
     font-size: 16px;
   }
 
   .about-container .content-block h2 {
-    font-size: 30px;
+    font-size: 22px;
     margin: 5px 0;
   }
 
   .about-container .description {
     font-size: 16px;
-    max-width: 300px;
   }
   .about-container .button-wrapper {
     margin-top: 30px;
