@@ -78,6 +78,16 @@ h1 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .landing-section .description {
+    font-size: 16px;
+  }
+}
+
 @keyframes reveal {
   0% {
     opacity: 0;

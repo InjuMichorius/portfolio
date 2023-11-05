@@ -101,17 +101,17 @@
 
   .work-container {
     display: grid;
-    grid-gap: 90px;
+    grid-gap: 60px;
     grid-template-columns: 1fr;
-    grid-template-rows: 900px;
+    grid-template-rows: 716px;
   }
 
   .work-container .project-row {
-    flex-direction: column;
-  }
-
-  .work-container .image-container {
-    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 318px;
+    height: 100%;
+    max-height: 100%;
   }
 
   .work-container .project-description {
@@ -128,7 +128,7 @@
     color: var(--white);
     height: 260px;
     width: 100%;
-    background-color: var(--darkBlack);
+    background-color: var(--black);
     border-radius: 10px;
     transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
   }
