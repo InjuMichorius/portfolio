@@ -1,6 +1,6 @@
 .work-section {
   background-color: rgba(17, 17, 16, 0.8);
-  padding: 90px;
+  padding: 90px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,14 +16,29 @@
   max-width: 1180px;
 }
 
+.project-row {
+  display: flex;
+  gap: 60px;
+  height: 100%;
+  max-height: 358px;
+  overflow: hidden;
+}
+
 .work-container {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 358px;
 }
 
 .work-container .image-container {
-  background-color: var(--black);
+  position: relative;
+  overflow: hidden;
+}
+
+.work-container .image-container p {
+  position: absolute;
+  overflow: hidden;
 }
 
 .work-container .project-description {
@@ -34,23 +49,23 @@
   color: var(--darkWhite);
 }
 
-.work-container .image-container {
+.work-container .project-container {
   cursor: pointer;
   position: relative;
   color: var(--white);
   height: 260px;
-  width: 100%;
+  width: 470px;
   background-color: var(--darkBlack);
   border-radius: 10px;
   transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.work-container .image-container:hover {
+.work-container .project-container:hover {
   padding: 20px;
   height: 338px;
 }
 
-.work-container .image-container img {
+.work-container .project-container .image-contaner {
   border-radius: 10px;
   width: 100%;
   height: 260px;
@@ -69,18 +84,18 @@
   transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.work-container .image-container h3 {
+.work-container .project-container h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
 
-.work-container .image-container span {
+.work-container .project-container span {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 
-.work-container .image-container:hover p {
+.work-container .project-container:hover p {
   margin-left: 0;
 }
 

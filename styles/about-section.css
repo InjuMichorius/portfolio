@@ -6,11 +6,18 @@
 
 .about-container img {
   height: auto;
+  filter: grayscale(1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container img:hover {
+  filter: grayscale(0);
 }
 
 .about-container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1000px;
   display: flex;
   gap: 60px;
   justify-content: space-between;
