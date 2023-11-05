@@ -19,7 +19,7 @@
 .project-row {
   display: flex;
   gap: 60px;
-  height: 100%;
+  height: 338px;
   max-height: 358px;
   overflow: hidden;
 }
@@ -31,16 +31,6 @@
   grid-template-rows: 358px;
 }
 
-.work-container .image-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.work-container .image-container p {
-  position: absolute;
-  overflow: hidden;
-}
-
 .work-container .project-description {
   position: absolute;
   left: 20px;
@@ -49,29 +39,20 @@
   color: var(--darkWhite);
 }
 
-.work-container .project-container {
+.work-container .image-container {
   cursor: pointer;
   position: relative;
   color: var(--white);
   height: 260px;
   width: 470px;
-  background-color: var(--darkBlack);
+  background-color: var(--black);
   border-radius: 10px;
   transition: all 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.work-container .project-container:hover {
+.work-container .image-container:hover {
   padding: 20px;
   height: 338px;
-}
-
-.work-container .project-container .image-contaner {
-  border-radius: 10px;
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  position: relative;
-  z-index: 10;
 }
 
 .work-container .project-details {
@@ -122,6 +103,11 @@
     display: grid;
     grid-gap: 90px;
     grid-template-columns: 1fr;
+    grid-template-rows: 900px;
+  }
+
+  .work-container .project-row {
+    flex-direction: column;
   }
 
   .work-container .image-container {
