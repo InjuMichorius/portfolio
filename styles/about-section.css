@@ -6,6 +6,13 @@
 
 .about-container img {
   height: auto;
+  filter: grayscale(1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container img:hover {
+  filter: grayscale(0);
 }
 
 .about-container {

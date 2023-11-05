@@ -55,54 +55,26 @@ h1 {
   transition-delay: 2400ms;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
   .landing-section {
-    padding: 140px 90px 0;
+    padding: 140px 15px 0;
   }
-
   h1 {
     font-size: 40px;
     line-height: 40px;
   }
-
   .landing-section .description {
-    font-size: 16px;
-    max-width: 600px;
+    font-size: 20px;
   }
 }
 
-@media only screen and (max-width: 850px) {
-  .landing-section {
-    position: relative;
-    padding: 140px 15px 0;
-  }
-
+@media only screen and (max-width: 1000px) {
   h1 {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 28px;
   }
-
-  .second-h1 {
-    margin-top: -10px;
-  }
-
   .landing-section .description {
     font-size: 16px;
-    max-width: 600px;
-    line-height: 18px;
-    margin-top: 10px;
-  }
-
-  .landing-section .description span {
-    animation-delay: 1500ms;
-  }
-
-  .landing-section .button-wrapper {
-    margin-top: 60px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    transition-delay: 2400ms;
   }
 }
 
