@@ -1,11 +1,11 @@
 .scroller {
-  max-width: 1180px;
+  max-width: 1000px;
   margin: 90px auto;
   transition-delay: 2400ms;
 }
 
 .marquee {
-  transition-delay: 900ms;
+  transition-delay: 0ms;
 }
 
 .scroller__inner {

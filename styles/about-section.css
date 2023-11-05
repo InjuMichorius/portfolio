@@ -10,7 +10,7 @@
 
 .about-container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1000px;
   display: flex;
   gap: 60px;
   justify-content: space-between;
